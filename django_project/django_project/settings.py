@@ -25,7 +25,7 @@ SECRET_KEY = '_n&smu&cmws_jo&8__&+cu4!k&mmob-9emsmvd8%afd_svey6&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'calendar_mom',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -120,4 +121,3 @@ def ip_addresses():
 
 # Discover our IP address
 ALLOWED_HOSTS = ip_addresses()
-
